@@ -25,7 +25,7 @@ Jeśli chcesz dodać ten plugin po dodaniu platformy ios (po wpisaniu cordova pl
 
 Metoda tworzy sztuczne połączenie głosowe i zwraca komunikat w zależności pod podjętej akcji przez użytkownika.
 
-    ble.receiveCall(callerName, callback, failure_callback);
+    VoipPlugin.receiveCall(callerName, callback, failure_callback);
 
 ### Opis
 
@@ -51,7 +51,7 @@ Jest możliwość symulowania połączeń z powiadomień np. FCM.
 
 ### Prosty przykład
 
-    function ddo(callback) {
+    function listener(callback) {
       switch(callback) {
             case "callStarted":
                 console.log("call started");
@@ -67,4 +67,4 @@ Jest możliwość symulowania połączeń z powiadomień np. FCM.
     
     function receiveCall() {
       window.VoipPlugin.receiveCall('ABEC',(s)=>ddo(s),(e)=>{console.log(e);});
-    }s
+    }
