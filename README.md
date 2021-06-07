@@ -1,6 +1,6 @@
-#VoipPlugin
+# VoipPlugin
 
-#INSTALACJA
+# INSTALACJA
 1. instalacja plugman z npm: npm install -g plugman
 2. pobranie repozytorium.
 3. rozpakowanie go.
@@ -66,5 +66,5 @@ Jest możliwość symulowania połączeń z powiadomień np. FCM.
     }
     
     function receiveCall() {
-      window.VoipPlugin.receiveCall('ABEC',(s)=>ddo(s),(e)=>{console.log(e);});
+      window.VoipPlugin.receiveCall('ABEC',(s)=>listener(s),(e)=>{console.log(e);});
     }
