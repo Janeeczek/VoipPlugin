@@ -1,4 +1,4 @@
-# VoipPlugin
+# VoipPlugin iOS
 
 # INSTALACJA
 1. instalacja plugman z npm: npm install -g plugman
